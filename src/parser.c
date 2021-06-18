@@ -3,5 +3,5 @@
 #include "../include/parser.h"
 #include <string.h>
 tokenList *start_parser(char* filename){
-	char *filedata = get_src(filename);
+	char *fileData = get_src(filename);
 }
