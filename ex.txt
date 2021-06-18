@@ -1,0 +1,21 @@
+load - load file or dir
+connect - db sql
+
+target-a stat to max
+levelCap- level thrashhold
+start(,) -dino to start with
+
+
+#ex
+load dinos
+target melee,stam
+levelCap 450
+start(<p male>,<p female>)
+target health 20k
+
+#ex2
+load dinos
+connect <tribe> <name>
+target melee
+start(<p male>,<p female>)
+target health 20k

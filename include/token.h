@@ -5,7 +5,7 @@ typedef enum _tokenType{
     TARGET,
     CONNECT,
     LEVELCAP,
-    START;
+    START
 }tokenType;
 
 typedef union _tokenData{
@@ -20,6 +20,6 @@ typedef struct _tokens{
 
 typedef struct _tokenList{
 	token data;
-	tokenList next;
+	struct _tokenList *next;
 }tokenList;
 #endif
