@@ -5,7 +5,8 @@ typedef enum _tokenType{
     TARGET,
     CONNECT,
     LEVELCAP,
-    START
+    START,
+    UNKNOWN
 }tokenType;
 
 typedef union _tokenData{
@@ -22,4 +23,7 @@ typedef struct _tokenList{
 	token data;
 	struct _tokenList *next;
 }tokenList;
+
+tokenType getToken(char *string);
+void addToken(token newp);
 #endif
