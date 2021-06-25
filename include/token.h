@@ -20,10 +20,10 @@ typedef struct _tokens{
 }token;
 
 typedef struct _tokenList{
-	token data;
+	token *data;
 	struct _tokenList *next;
 }tokenList;
 
 tokenType getToken(char *string);
-void addToken(token newp);
+void addToken(tokenList **list,token *newp);
 #endif
