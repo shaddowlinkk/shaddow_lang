@@ -16,7 +16,7 @@ typedef union _tokenData{
 
 typedef struct _tokens{
     tokenType type;
-    tokenData data[];
+    tokenData data;
 }token;
 
 typedef struct _tokenList{
