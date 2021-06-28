@@ -37,7 +37,7 @@ void get_iniData(char *Title,char *prop,char *filename, char *buff){
                 }
                 strcpy(buff,eqPtr);
             }else{
-                if(strncmp(cTitle,line, strlen(cTitle))){
+                if(strncmp(cTitle,line, strlen(cTitle))==0){
                     foundTitle =1;
                 }
             }
