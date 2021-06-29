@@ -35,7 +35,7 @@ void get_iniData(char *Title,char *prop,char *filename, char *buff){
                 while (*(eqPtr+1)==' '){
                     eqPtr++;
                 }
-                strcpy(buff,eqPtr);
+                strcpy(buff,eqPtr+1);
             }else{
                 if(strncmp(cTitle,line, strlen(cTitle))==0){
                     foundTitle =1;
