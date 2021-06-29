@@ -26,6 +26,7 @@ void get_iniData(char *Title,char *prop,char *filename, char *buff){
     sprintf(cTitle,"[%s]",Title);
     int foundTitle;
     while (fgets(line,1025,dinoData)!=0){
+        int len = strlen(line);
         if(strncmp(line,"//",2)==0) continue;
         if(line[0]=='#') continue;
         eqPtr = strchr(line,'=');
@@ -36,10 +37,10 @@ void get_iniData(char *Title,char *prop,char *filename, char *buff){
                     eqPtr++;
                 }
                 strcpy(buff,eqPtr+1);
-            }else{
-                if(strncmp(cTitle,line, strlen(cTitle))==0){
-                    foundTitle =1;
-                }
+            }
+        }else{
+            if(strncmp(cTitle,line, strlen(cTitle))==0){
+                foundTitle =1;
             }
         }
     }

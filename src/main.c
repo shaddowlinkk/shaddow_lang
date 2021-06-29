@@ -18,11 +18,12 @@ int main(int argc, char**argv){
 	if(strcmp(argv[1],"test")==0){
 	if((argc>3)) return 21;
 		start_parser(argv[2]);
-		return 10;	
+		return 10;
 	}
 	if(strcmp(argv[1],"INITesting")==0){
 		char buff[64];
-		get_iniData("tesing","test","test.ini",buff);
+        memset(buff,0,64);
+		get_iniData("testing","test","test.ini",buff);
 		printf("%s",buff);
 		return 11;
 	}
